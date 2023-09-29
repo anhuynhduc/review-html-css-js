@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng Shop
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img"/>
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/google_play.png" alt="Google Play" class="header__qr-download-img"/>
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-download-img"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class=" header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="data:image/jpeg;base64,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" alt="" class="header__notify-img"/>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Bộ Mỹ Phẩm Kayoko Plus+ 6in1 Nhật Bản Chính Hãng Có Tem Chống Hàng Giả
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Tiết kiệm hơn khi áp dụng mã giảm giá của Shop. Liên hệ với Shop nếu gặp trục trặc về mã giảm giá do Shop tự tạo.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://static.vinwonders.com/production/nguyen-lieu-lam-banh-trung-thu-1.jpg" alt="" class="header__notify-img"/>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Bánh nướng, bánh dẻo, bánh trung thu nhân đậu xanh, thập cẩm, khoai môn, sầu riêng vỏ mềm thơm, trọng lượng 100g - 250g
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Tiết kiệm hơn khi áp dụng mã giảm giá của Shop
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://inchi.vn/data/thumbnails/Bansaococ.jpg" alt="" class="header__notify-img"/>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Cốc uống nước , cốc đánh răng hình Khủng Long,Xương Rồng Cute
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Tiết kiệm hơn khi áp dụng mã giảm giá của Shop
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+<!--    Modal layout-->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+                <!-- Register Form-->
+<!--                <div class="auth-form">-->
+<!--                    <div class="auth-form__container">-->
+<!--                        <div class="auth-form__header">-->
+<!--                            <h3 class="auth-form__heading">Đăng ký</h3>-->
+<!--                            <span class="auth-form__switch-btn">Đăng nhập</span>-->
+<!--                        </div>-->
+<!--                        <div class="auth-form__form">-->
+<!--                            <div class="auth-form__group">-->
+<!--                                <input type="text" class="auth-form__input" placeholder="Email của bạn">-->
+<!--                            </div>-->
+<!--                            <div class="auth-form__group">-->
+<!--                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">-->
+<!--                            </div>-->
+<!--                            <div class="auth-form__group">-->
+<!--                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="auth-form__aside">-->
+<!--                            <p class="auth-form__policy-text">-->
+<!--                                Bằng việc đăng ký, bạn đã dồng ý với shopee về-->
+<!--                                <a class="auth-form__text-link">Điều khoản dịch vụ</a> &-->
+<!--                                <a class="auth-form__text-link">Chính sách bảo mật</a>-->
+<!--                            </p>-->
+<!--                        </div>-->
+
+<!--                        <div class="auth-form__controls">-->
+<!--                            <button class="btn btn&#45;&#45;normal auth-form__controls-back">TRỞ LẠI</button>-->
+<!--                            <button class="btn btn&#45;&#45;primary ">ĐĂNG KÝ</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="auth-form__socials">-->
+<!--                        <a href="" class="auth-form__socials&#45;&#45;facebook btn btn&#45;&#45;size-s btn&#45;&#45;with-icon">-->
+<!--                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>-->
+<!--                            <span class="auth-form__socials-title">-->
+<!--                                Kết nối với Facebook-->
+<!--                            </span>-->
+<!--                        </a>-->
+<!--                        <a href="" class="auth-form__socials&#45;&#45;google btn btn&#45;&#45;size-s btn&#45;&#45;with-icon">-->
+<!--                            <i class="auth-form__socials-icon fa-brands fa-google"></i>-->
+<!--                            <span class="auth-form__socials-title">-->
+<!--                                Kết nối với Google-->
+<!--                            </span>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            <!-- Login Form-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary ">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
