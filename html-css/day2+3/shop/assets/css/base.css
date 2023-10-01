@@ -4,6 +4,10 @@
     --text-color: #333;
     --primary-color: #EE4D2D;
     --boder-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
+    --header-height: 150px;
+    --navbar-height: 34px;
+    --navbar-with-search-height: calc(var(--header-height) - var(--navbar-height))
 }
 * {
     box-sizing: inherit;
@@ -25,6 +29,22 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/*Test*/
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__column-2-4{
+    margin-left: 20px;
+}
+.grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 @keyframes fadeIn {
@@ -33,6 +53,15 @@ html{
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
     }
 }
 
@@ -52,10 +81,13 @@ html{
     background: rgba(0, 0, 0, 0.4);
 }
 .modal__body{
+    --growth-from: 0.7;
+    --growth-to: 1;
     background: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
+    animation: growth linear 0.1s;
 }
 /*Button Style*/
 
@@ -70,8 +102,8 @@ html{
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    background: none;
-    display: flex;
+    background: white;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -92,3 +124,73 @@ html{
     cursor: default;
     background: #c3c3c3;
 }
+
+/*Selection*/
+.select-input{
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 6px 10px;
+    list-style: none;
+    display: none;
+}
+.select-input__icon{
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    margin: 0 16px 0 8px;
+    position: relative;
+    top: 1px;
+}
+.select-input__link{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
