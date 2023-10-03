@@ -21,8 +21,8 @@ console.log(myArray.shift())
 // Array unshift() -> them phan tu vao dau mang va tra ve do dai moi cua mang
 console.log(myArray.unshift("Ruby"))
 
-// Array join()
-console.log(myArray.join())
+// Array join() -> chuyen mang thanh string theo dk
+console.log(myArray.join('-'))
 
 // Array concat() -> noi 2 mang lai
 console.log(myArray.concat(myArray2))
@@ -37,6 +37,8 @@ console.log(myArray.splice(1,1,"Python"))
 
 // Array slice() -> cat mang theo dk
 console.log(myArray.slice(0,3))
+
+
 
 
 

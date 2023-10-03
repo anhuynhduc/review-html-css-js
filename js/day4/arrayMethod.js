@@ -94,3 +94,32 @@ const filterCourse = courses.filter((course,index)=>{
 
 console.log(filterCourse)
 
+// map() -> loc qua mang theo tuan tu tu tren xuong duoi
+// thay đoi phan tu theo dieu kien
+
+console.log("map:")
+
+const mapCourse = courses.map((course,index)=> {
+
+    return {
+        id: course.id,
+        name: `Khoa hoc: ${course.name}`,
+        coin: `Gia: ${course.coin}`
+    }
+})
+
+console.log(mapCourse)
+
+// reduce() -> loc qua mang theo tuan tu tu tren xuong duoi
+// tinh toan theo dieu kien
+
+console.log("reduce:")
+
+function coinHandler(accumulator, currentValue, currentIndex, originArray) {
+    return accumulator + currentValue.coin
+}
+
+const totalCoin = courses.reduce(coinHandler,0)
+
+console.log(totalCoin)
+
