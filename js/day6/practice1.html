@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .search{
+            display: block;
+            margin-top: 50px;
+        }
+        ul{
+            display: none;
+        }
+
+        .search:focus ~ ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <input type="text">
+  <input type="checkbox">
+
+  <select>
+    <option value="1">js</option>
+    <option value="2">php</option>
+    <option value="3">java</option>
+  </select>
+
+  <a href="https://f8.edu.vn">
+      Hoc lap trinh
+  </a>
+
+  <a href="https://google.com.vn">
+      Tim kiem
+  </a>
+
+  <input class="search" placeholder="Tim kiem">
+  <ul>
+      <li>Js</li>
+      <li>PHP</li>
+      <li>Golang</li>
+  </ul>
+
+  <div class="stopPropagation">
+        DIV
+
+        <button>
+            Click me !
+        </button>
+  </div>
+
+  <button id="add_remove_listener">Click here !</button>
+<script src="practice1.js"></script>
+</body>
+</html>

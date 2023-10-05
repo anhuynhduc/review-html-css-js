@@ -42,3 +42,5 @@ console.log(myArray.slice(0,3))
 
 
 
+
+
