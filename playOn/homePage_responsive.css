@@ -1,0 +1,73 @@
+/*Mobile*/
+@media (max-width: 767px) {
+
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .header__navbar-list {
+        gap: 20px;
+        margin-left: -20px;
+    }
+
+    .header__navbar-list li a {
+        font-size: 15px;
+    }
+
+    .header__navbar-action {
+        gap: 20px;
+        margin-left: 20%;
+    }
+
+    .btn-language {
+        height: 30px;
+        width: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .btn-language__img1 {
+        height: 18px;
+    }
+
+    .header__navbar-action {
+        gap: 5px;
+    }
+
+    .header__navbar-manager {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-left: 7px;
+    }
+
+    .btn-pay {
+        height: 27px;
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .btn-link {
+        height: 46px;
+        width: 65px;
+        gap: 3px;
+    }
+
+    .btn-link img {
+        height: 12px;
+    }
+
+    .btn-link span {
+        font-size: 10px;
+    }
+    .suggest-content__action {
+        margin: 140px 0 0 30px;
+    }
+}
+/*Pc*/

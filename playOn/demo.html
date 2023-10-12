@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <style>
+
+      .navbar-search__slider {
+        max-width: 100%;
+      }
+      .tranding-slide {
+        width: 300px;
+        height: 450px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      .tranding-slide .tranding-slide-img img {
+        width: 350px;
+        height: 500px;
+        border-radius: 2rem;
+        object-fit: cover;
+      }
+
+      .tranding-slider-control .slider-arrow {
+        width: 3rem;
+        height: 3.5rem;
+        border-radius: 10px;
+        transform: translateX(0);
+        background: #889298;
+        color: #ffffff;
+        opacity: 0.8;
+      }
+      .tranding-slider-control .swiper-button-prev{
+        margin-left: 167px;
+      }
+      .tranding-slider-control .swiper-button-next{
+        margin-right: 180px;
+      }
+    </style>
+</head>
+<body>
+  <div class="navbar-search__slider">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide-start -->
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/movies/movie1.svg" alt="Tranding">
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/movies/movie2.svg" alt="Tranding">
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/movies/movie3.svg" alt="Tranding">
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/movies/movie4.svg" alt="Tranding">
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/movies/movie5.svg" alt="Tranding">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+        </div>
+        <div class="swiper-button-next slider-arrow">
+        </div>
+      </div>
+
+    </div>
+  </div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var TrandingSlider = new Swiper('.tranding-slider', {
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 50,
+      modifier:3
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+</script>
+</body>
+</html>
