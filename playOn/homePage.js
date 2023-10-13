@@ -29,7 +29,7 @@ btnClose.addEventListener('click',()=>{
     inputSearch.style.display = "none"
 
     let actionHeader = document.querySelector('.header__navbar-action')
-    actionHeader.style.marginLeft = "570px"
+    actionHeader.style.marginLeft = "500px"
 
     let searchCategory = document.querySelector('.navbar-search__category')
     searchCategory.style.display = "none"
@@ -48,8 +48,8 @@ let TrandingSlider_header = new Swiper('.tranding-slider__header', {
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
-        depth: 50,
-        modifier:3
+        depth: 250,
+        modifier:1
     },
     pagination: {
         el: '.swiper-pagination',

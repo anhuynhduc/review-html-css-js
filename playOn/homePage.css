@@ -1,3 +1,6 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body{
     background: #020510;
 }
@@ -19,6 +22,10 @@ body{
     margin-top: 10px;
     width: 150px;
 }
+.logo .btn-language{
+    display: none;
+    height: 60px;
+}
 .header__navbar-list{
     display: flex;
     align-items: center;
@@ -36,7 +43,7 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-left: 570px;
+    margin-left: 500px;
 }
 .btn-language{
     border: 2px solid #30333C;
@@ -105,6 +112,19 @@ body{
     border-radius: 5px;
     font-size: 15px;
     color: #ffffff;
+}
+.btn-list{
+    height: 35px;
+    width: 40px;
+    background: #FF2C78;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.btn-list img{
+    height: 35px;
 }
 
 /*Navbar Search Category*/
@@ -410,7 +430,7 @@ body{
     width: 130px;
     cursor: pointer;
 }
-.btn-mood span{
+.btn-mood span, .btn-somebody span{
     color: #C1C1C1;
 }
 .btn-img__before{
