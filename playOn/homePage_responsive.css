@@ -143,9 +143,11 @@
         height: 150px;
         border-radius: 1rem;
     }
+    .list-action__mobile{
+        display: block;
+    }
 
     .list-action {
-        margin-top: 20px;
         display: none;
     }
 
@@ -435,6 +437,7 @@
     .list-action {
         margin-top: 20px;
     }
+
 
     .continue-watching {
         margin-top: 40px;
