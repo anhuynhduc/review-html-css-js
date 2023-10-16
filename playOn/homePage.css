@@ -17,6 +17,7 @@ body{
     margin: 0 1.5% 0 1.5%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .logo img{
     margin-top: 10px;
@@ -140,11 +141,11 @@ body{
     color:#ffffff;
 }
 .navbar-search__category-content{
-    display: grid;
-    grid-template-areas:
-        "listImg banner"
-        "actor banner"
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .list-search__img{
     grid-area: listImg;
     margin-top: 10px;
