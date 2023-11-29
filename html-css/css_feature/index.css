@@ -1,0 +1,95 @@
+
+.clip-path__circle{
+    width: 500px;
+    height: 500px;
+    background: rebeccapurple;
+    transition: all 2s ease;
+    clip-path: circle(50% at 0 0);
+    margin-left: 400px;
+}
+
+.clip-path__circle:hover{
+    clip-path: circle(100%);
+}
+
+.clip-path__polygon{
+    margin-left: 400px;
+    width: 500px;
+    height: 500px;
+    background: rebeccapurple;
+    transition: all 2s ease;
+    clip-path: polygon(13% 22%, 11% 59%, 54% 76%, 81% 48%, 30% 18%);
+}
+
+.clip-path__polygon:hover{
+    clip-path: polygon(0% 50%, 11% 59%, 54% 76%, 81% 48%, 30% 18%);
+}
+
+/*.frame{*/
+/*    margin-left: 400px;*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    border: 3px solid rebeccapurple;*/
+/*    perspective: 100px;*/
+/*}*/
+
+/*.shape{*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    background-color: lightblue;*/
+/*    transform: rotateX(45deg);*/
+/*    transition: all ease 3s;*/
+/*}*/
+
+/*.player{*/
+/*    width: 100%;*/
+/*    background: black;*/
+/*    aspect-ratio: 16/9;*/
+/*}*/
+
+.filter__blur{
+    margin-left: 400px;
+}
+.filter__blur img{
+    filter: blur(20px);
+}
+.filter__blur img:active{
+    filter: none;
+}
+
+.filter__grayscale{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.filter__grayscale img{
+    filter: grayscale(50%);
+}
+
+
+.filter__saturate{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.filter__saturate img{
+    filter: saturate(200%);
+}
+
+.pseudo-classes{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.pseudo-classes h1,
+.pseudo-classes h1,
+.pseudo-classes h1,
+.pseudo-classes p {
+    color: blue;
+}
+
+/*.pseudo-classes :is(h1,h2,h3,p){*/
+/*    color: red;*/
+/*}*/
+
+.pseudo-classes :not(h3){
+    color: red;
+}
+
